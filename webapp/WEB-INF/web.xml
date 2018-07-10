@@ -6,13 +6,24 @@
     <display-name>Archetype Created Web Application</display-name>
 
     <servlet>
-        <servlet-name>helloServlet</servlet-name>
+        <servlet-name>helloServlet1</servlet-name>
+        <servlet-class>io.github.xesam.jweb.HelloServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet>
+        <servlet-name>helloServlet2</servlet-name>
         <servlet-class>io.github.xesam.jweb.HelloServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>helloServlet</servlet-name>
-        <url-pattern>/greeting</url-pattern>
+        <servlet-name>helloServlet1</servlet-name>
+        <url-pattern>/greeting1</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>helloServlet2</servlet-name>
+        <url-pattern>/greeting2</url-pattern>
     </servlet-mapping>
 </web-app>
