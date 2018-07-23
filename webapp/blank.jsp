@@ -15,7 +15,7 @@
     <%=add(2, 3)%>
 </h2>
 <h2>
-    <%=Math.sin(Math.PI)%>
+    Math.sin(Math.PI)=<%=Math.sin(Math.PI)%>
 </h2>
 </body>
 </html>
