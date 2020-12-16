@@ -5,4 +5,4 @@
 3. pom.xml : maven.compiler.source 
 
 ## setting
-![setting-webapp](./setting-webapp.png)
+![setting-webapp](idea_config/setting-webapp.png)

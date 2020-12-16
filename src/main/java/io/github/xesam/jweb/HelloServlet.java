@@ -8,16 +8,14 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(
-        name = "helloServlet3",
-        urlPatterns = {"/greeting3"},
+        name = "hello3",
+        urlPatterns = {"/hello3"},
         loadOnStartup = 1
 )
 public class HelloServlet extends HttpServlet {
     @Override
     public void init() throws ServletException {
         System.out.println(getServletName() + " init");
-        System.out.println(getServletName() + " " + getServletContext().getInitParameter("ctx-param-1"));
-        System.out.println(getServletName() + " " + getServletContext().getInitParameter("ctx-param-2"));
     }
 
     @Override
@@ -26,7 +24,7 @@ public class HelloServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println(String.format("ServletName:%s,hello servlet", this.getServletName()));
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        resp.getWriter().println(String.format("HelloServlet:%s", this.getServletName()));
     }
 }
