@@ -16,8 +16,13 @@
     <%= getText("World") %>
 </h1>
 <div>
-  <p>application.getInitParameter("ctx_1") = <%= application.getInitParameter("ctx_1")%></p>
-  <p>application.getInitParameter("ctx_2") = <%= application.getInitParameter("ctx_2")%></p>
+    <p>application.getInitParameter("ctx_1") = <%= application.getInitParameter("ctx_1")%>
+    </p>
+    <p>application.getInitParameter("ctx_2") = <%= application.getInitParameter("ctx_2")%>
+    </p>
+    <p>
+        <%= request.getContextPath()%>
+    </p>
 </div>
 </body>
 </html>
