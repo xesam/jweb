@@ -4,9 +4,9 @@
 
 ![web](./web.png)
 
-2. 配置 web.xml 地址 
+2. 配置 web.xml 地址，注意，两部分都要配置
 
-![setting-webapp](idea_config/setting-webapp.png)
+![setting-webapp](./setting-webapp.png)
 
 3. 添加 artifacts
 

@@ -6,12 +6,12 @@
     <display-name>Archetype Created Web Application</display-name>
 
     <context-param>
-        <param-name>ctx-param-1</param-name>
+        <param-name>ctx_1</param-name>
         <param-value>this is ctx-param-1</param-value>
     </context-param>
 
     <context-param>
-        <param-name>ctx-param-2</param-name>
+        <param-name>ctx_2</param-name>
         <param-value>this is ctx-param-2</param-value>
     </context-param>
 
@@ -34,6 +34,6 @@
 
     <servlet-mapping>
         <servlet-name>hello</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/hello</url-pattern>
     </servlet-mapping>
 </web-app>
