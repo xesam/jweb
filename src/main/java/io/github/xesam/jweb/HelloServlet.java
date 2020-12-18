@@ -7,7 +7,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.nio.charset.StandardCharsets;
 
 @WebServlet(
         name = "hello3",
@@ -27,8 +26,7 @@ public class HelloServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        resp.setHeader("test-key", "test-value");
-        resp.setCharacterEncoding(StandardCharsets.UTF_8.name());
+        System.out.println("doGet");
         PrintWriter writer = resp.getWriter();
         writer.println(String.format("HelloServlet:%s", this.getServletName()));
     }
