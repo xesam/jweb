@@ -7,7 +7,7 @@
         session[user] = <%= session.getAttribute("user")%>
     </p>
     <p>
-        <a href="/basic/loginAction?action=logout">logout</a>
+        <a href="/loginAction?action=logout">logout</a>
     </p>
 </div>
 </body>

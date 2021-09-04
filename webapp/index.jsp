@@ -9,12 +9,12 @@
     <%@include file="head.jsp" %>
 </head>
 <body>
-<h1>
-    <%= getText("JSP") %>
-</h1>
-<h1>
-    <%= getText("World") %>
-</h1>
+<p>
+    <%= getText("A") %>
+</p>
+<p>
+    <%= getText("B") %>
+</p>
 <div>
     <p>application.getInitParameter("ctx_1") = <%= application.getInitParameter("ctx_1")%>
     </p>
@@ -23,6 +23,7 @@
     <p>
         <%= request.getContextPath()%>
     </p>
+    <p><a href="loginAction">login</a></p>
 </div>
 </body>
 </html>
